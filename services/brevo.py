@@ -23,13 +23,58 @@ def send_email(api_key, sender_email, receiver_email):
     ]
 
     email = sib_api_v3_sdk.SendSmtpEmail(
+
         to=to,
+
         sender=sender,
-        subject="Outreach Pipeline Demo",
-        html_content="""
-        <h2>Hello!</h2>
-        <p>This email was sent using Brevo API integration.
-        </p>
+
+        subject="Business Collaboration Opportunity",
+
+        html_content=f"""
+        <html>
+        <body>
+
+            <h2>Hello,</h2>
+
+            <p>
+            I hope you are doing well.
+            </p>
+
+            <p>
+            I recently came across your company profile
+            during our AI-powered outreach research workflow.
+            </p>
+
+            <p>
+            We are currently exploring potential business
+            collaboration and networking opportunities with
+            innovative companies in your industry.
+            </p>
+
+            <p>
+            Your organization stood out based on its
+            industry presence and operational scale.
+            </p>
+
+            <p>
+            I would love to connect and explore possible
+            collaboration opportunities.
+            </p>
+
+            <p>
+            Looking forward to hearing from you.
+            </p>
+
+            <br>
+
+            <p>
+            Best Regards,<br>
+            Ramya Mannam<br>
+            AI Outreach Pipeline
+            </p>
+
+        </body>
+        </html>
         """
     )
 
