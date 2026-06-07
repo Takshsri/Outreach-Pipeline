@@ -167,7 +167,7 @@ It structures enriched lead information into outreach-ready data before email au
 ## 1. Clone Repository
 
 ```bash
-git clone <your-github-repository-link>
+git clone https://github.com/Takshsri/Outreach-Pipeline
 ```
 
 ---
